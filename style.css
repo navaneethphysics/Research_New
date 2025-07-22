@@ -1,7 +1,31 @@
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* General Reset */
+body, h1, h2, h3, h4, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -12,17 +36,89 @@ html {
         transform: translateY(0);
     }
 }
-
 .animate-fadeInUp {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
+/* Image Hover Effect */
 .research-img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .research-img:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+nav a {
+    padding: 0.5rem 1rem;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Mobile Menu Hidden by Default */
+#mobile-menu {
+    display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    p { font-size: 0.95rem; }
+
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 0.75rem;
+    }
+
+    /* Mobile menu button */
+    #menu-button {
+        display: block;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    /* Show mobile menu when toggled */
+    #mobile-menu.active {
+        display: block;
+        background: white;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; }
+    p { font-size: 0.9rem; }
 }
 
