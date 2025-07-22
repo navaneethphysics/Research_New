@@ -12,7 +12,8 @@
 
     <!-- Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50 py-4">
-        <div class="max-w-7xl mx-auto flex justify-center space-x-8">
+        <!--div class="max-w-7xl mx-auto flex justify-center space-x-8"-->
+   <div class="hidden md:flex space-x-6 justify-center"> 
    <a href="index.html" class="text-blue-900 font-semibold text-lg hover:text-blue-600">Home</a>
             <a href="research.html" class="text-blue-900 font-semibold text-lg hover:text-blue-600">Research</a>
             <a href="members.html" class="text-blue-900 font-semibold text-lg hover:text-blue-600">Members</a>
@@ -21,6 +22,29 @@
             <a href="useful.html" class="text-blue-900 font-semibold text-lg hover:text-blue-600">Resources</a>
             <a href="contact.html" class="text-blue-900 font-semibold text-lg hover:text-blue-600">Contact</a>      
   </div>
+
+<!-- Mobile Hamburger Icon -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="md:hidden p-2 ml-2">
+                        <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden flex-col space-y-2 pb-4 md:hidden px-4">
+                <a href="index.html" class="block text-blue-900 font-semibold hover:text-blue-600">Home</a>
+                <a href="research.html" class="block text-blue-900 font-semibold hover:text-blue-600">Research</a>
+                <a href="members.html" class="block text-blue-900 font-semibold hover:text-blue-600">Members</a>
+                <a href="publications.html" class="block text-blue-900 font-semibold hover:text-blue-600">Publications</a>
+                <a href="teaching.html" class="block text-blue-900 font-semibold hover:text-blue-600">Teaching</a>
+                <a href="useful.html" class="block text-blue-900 font-semibold hover:text-blue-600">Resources</a>
+                <a href="contact.html" class="block text-blue-900 font-semibold hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+
     </nav>
 
     <div class="max-w-7xl mx-auto px-6 py-12">
@@ -29,26 +53,26 @@
             <ul class="list-disc ml-6 mt-4 space-y-6">
                 <li><span class="font-semibold text-blue-900">Sterile Neutrinos</span> - Beyond Standard Model searches</li>
 <figure class="mt-4">
-<p class="text-gray-600">Sterile neutrinos are elusive, hypothetical particles that don’t interact with matter like regular neutrinos, making them a fascinating yet challenging piece of the cosmic puzzle. Our research focuses on detecting their subtle effects in oscillation experiments, potentially revolutionizing our understanding of particle physics. How the long baseline experiment is looks for sterile neutrino is outlined here, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.091803" target="_blank" class="text-blue-600 hover:underline">Sterile PRL</a>.</p>
+<p class="text-gray-600 text-justify px--6">Sterile neutrinos are elusive, hypothetical particles that don’t interact with matter like regular neutrinos, making them a fascinating yet challenging piece of the cosmic puzzle. Our research focuses on detecting their subtle effects in oscillation experiments, potentially revolutionizing our understanding of particle physics. How the long baseline experiment is looks for sterile neutrino is outlined here, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.091803" target="_blank" class="text-blue-600 hover:underline">Sterile PRL</a>.</p>
                         <img src="m2.png" alt="Graph showing oscillation anomaly" class="research-img rounded-lg w-full max-w-2xl mx-auto">
                         <figcaption class="text-center text-gray-500 mt-2">Oscillation anomaly hinting at sterile neutrinos.</figcaption>
                     </figure>
                 <li><span class="font-semibold text-blue-900">Detector Innovations</span> - Advanced particle detectors</li>
- As part of our experiments, we are also developing the application specific integrated circuit in collaboration with our Electrical Engineering department's  <a href="https://iitk.ac.in/sscd/" target="_blank" class="text-blue-600 hover:underline">Solid State Lab at IIT Kanpur </a>. Experiments like DUNE and ANNIE use state-of-the-art modern particle detectors. At IIT Kanpur, we are also planning to engage in studies of these advanced detector technologies. One such photodetector currently used by ANNIE is the Large Area Picosecond Photodetectors (LAPPD)  <a href="https://annie.fnal.gov/lappds/" target="_blank" class="text-blue-600 hover:underline">LAPPDs </a>.
+<p class="text-gray-600 text-justify px--6"> As part of our experiments, we are also developing the application specific integrated circuit in collaboration with our Electrical Engineering department's  <a href="https://iitk.ac.in/sscd/" target="_blank" class="text-blue-600 hover:underline">Solid State Lab at IIT Kanpur </a>. Experiments like DUNE and ANNIE use state-of-the-art modern particle detectors. At IIT Kanpur, we are also planning to engage in studies of these advanced detector technologies. One such photodetector currently used by ANNIE is the Large Area Picosecond Photodetectors (LAPPD)  <a href="https://annie.fnal.gov/lappds/" target="_blank" class="text-blue-600 hover:underline">LAPPDs </a>.</p>
 <figure class="mt-4">
                         <img src="m1.png" alt="Image of DUNE detector prototype" class="research-img rounded-lg w-full max-w-2xl mx-auto">
                         <figcaption class="text-center text-gray-500 mt-2">MINOS Far Detector and ANNIE photomultiplier tubes (Picture -Fermilab).</figcaption>
                     </figure>                
 <li><span class="font-semibold text-blue-900">Supernova Detection</span> - Early warning system for Astronomers</li>
 
- <p class="text-gray-600">DUNE, with its LArTPC technology, would record more than 3500 events, 3300 by the CC channel, and 200 by the ES channel for the assumed GVKM supernova neutrino flux. The CC interaction distribution has a peak around 30 MeV, while ES interactions have a peak around 20 MeV. Since neutrinos start streaming from the core of the supernova much earlier than the photons, this can be used for pointing the supernova as part of the SNEWS program as soon as neutrinos are detected. The preliminary idea of how DUNE helps supernova pointing is published here,  <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.092006" target="_blank" class="text-blue-600 hover:underline">Supernova PRD</a>.</p>
+ <p class="text-gray-600 text-justify px--6">DUNE, with its LArTPC technology, would record more than 3500 events, 3300 by the CC channel, and 200 by the ES channel for the assumed GVKM supernova neutrino flux. The CC interaction distribution has a peak around 30 MeV, while ES interactions have a peak around 20 MeV. Since neutrinos start streaming from the core of the supernova much earlier than the photons, this can be used for pointing the supernova as part of the SNEWS program as soon as neutrinos are detected. The preliminary idea of how DUNE helps supernova pointing is published here,  <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.092006" target="_blank" class="text-blue-600 hover:underline">Supernova PRD</a>.</p>
 <figure class="mt-4">
                         <img src="DUNE_supernova.jpg" alt="Illustration of cosmic neutrino source" class="research-img rounded-lg w-full max-w-2xl mx-auto">
                         <figcaption class="text-center text-gray-500 mt-2">Two-dimensional distributions illustrating the relative event rates as a function of both neutrino energy and the cosine of the scattering angle, for each interaction type.</figcaption>
                     </figure>
 
                 <li><span class="font-semibold text-blue-900">FSI Modeling</span> - Neutrino-nucleus interaction modelling</li>
-<p class="text-gray-600">One of the main challenges in neutrino-nucleus interaction studies is the limited understanding of final-state interactions (FSIs), the complex intranuclear processes that occur after the initial neutrino interaction. These interactions can alter the number, type, and energy of outgoing particles, making it difficult to accurately reconstruct the neutrino energy and event topology. ANNIE aims to measure neutron detection; specifically, we will measure the neutrino multiplicity as a function of outgoing lepton in a CCQE interaction and then correlate the muon momentum to the number of neutrons.The prelinary measurment of neutron capture is done with ANNIE data, <a href="https://lss.fnal.gov/archive/thesis/2000/fermilab-thesis-2022-22.pdf" target="_blank" class="text-blue-600 hover:underline">Michael's Thesis</a>.<p> 
+<p class="text-gray-600 text-justify px--6">One of the main challenges in neutrino-nucleus interaction studies is the limited understanding of final-state interactions (FSIs), the complex intranuclear processes that occur after the initial neutrino interaction. These interactions can alter the number, type, and energy of outgoing particles, making it difficult to accurately reconstruct the neutrino energy and event topology. ANNIE aims to measure neutron detection; specifically, we will measure the neutrino multiplicity as a function of outgoing lepton in a CCQE interaction and then correlate the muon momentum to the number of neutrons.The prelinary measurment of neutron capture is done with ANNIE data, <a href="https://lss.fnal.gov/archive/thesis/2000/fermilab-thesis-2022-22.pdf" target="_blank" class="text-blue-600 hover:underline">Michael's Thesis</a>.<p> 
  <figure class="mt-4">
                         <img src="int_2.png" alt="Illustration of cosmic neutrino source" class="research-img rounded-lg w-full max-w-2xl mx-auto">
                         <figcaption class="text-center text-gray-500 mt-2">Two-dimensional distributions illustrating the relative event rates as a function of both neutrino energy and the cosine of the scattering angle, for each interaction type.</figcaption>
@@ -56,7 +80,7 @@
 
                 <li><span class="font-semibold text-blue-900">Photon Sensors Testing</span> - MPPC evaluation at IITK</li>
 
-We are planning to setup lab to test the  MPPC arrays to explore their three characteristics are single photoelectron charge, crosstalk, and electrical gain, and then eliminated the background noise, including possible sources of photon and thermal particles in a dark environment. The details of the testing is outlined here <a href="https://www.researchgate.net/publication/390275662_LED_Optical_Fiber_Profile_investigations_and_Cosmic_ray_Muons_detections_with_4x4_MPPC_arrays" target="_blank" class="text-blue-600 hover:underline">MPPC testing</a>. 
+<p class="text-gray-600 text-justify px--6"> We are planning to setup lab to test the  MPPC arrays to explore their three characteristics are single photoelectron charge, crosstalk, and electrical gain, and then eliminated the background noise, including possible sources of photon and thermal particles in a dark environment. The details of the testing is outlined here <a href="https://www.researchgate.net/publication/390275662_LED_Optical_Fiber_Profile_investigations_and_Cosmic_ray_Muons_detections_with_4x4_MPPC_arrays" target="_blank" class="text-blue-600 hover:underline">MPPC testing</a>. </p>
 <figure class="mt-4">
                         <img src="mppc.png" alt="Illustration of cosmic neutrino source" class="research-img rounded-lg w-full max-w-2xl mx-auto">
                         <figcaption class="text-center text-gray-500 mt-2">All hardware components that are required for experiments and The single photoelectron signal (measured in mV unit) vs. time (1e-7s) in different MPPCs</figcaption>
@@ -71,6 +95,15 @@ We are planning to setup lab to test the  MPPC arrays to explore their three cha
 <footer class="bg-gradient-to-r from-gray-700 to-cyan-500 text-white text-center py-6">
         <p>© 2025 IIT Kanpur Neutrino Group</p>
     </footer>
+<script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
 
